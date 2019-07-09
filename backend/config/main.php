@@ -12,10 +12,10 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
-	'homeUrl' => '/thewatch-v2/administrator',
+	'homeUrl' => '/thewatch-v2/administrator', // localhost home url
     'components' => [
         'request' => [
-            'baseUrl' => '/thewatch-v2/administrator',
+            'baseUrl' => '/thewatch-v2/administrator', // localhost base url
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
