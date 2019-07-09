@@ -1,6 +1,47 @@
-assets/*
-!assets/.gitignore
-protected/runtime/*
-!protected/runtime/.gitignore
-protected/data/*.db
-themes/classic/views/
+# yii console command
+/yii
+
+# phpstorm project files
+.idea/**
+
+# netbeans project files
+nbproject
+
+# OS cache
+Thumbs.db
+.DS_Store
+
+# composer vendor dir
+vendor/*
+vendor/**
+
+# Uploads dirs
+web/media
+
+# Yii temp directories
+web/assets/**
+runtime/**
+web/minify/**
+
+# composer itself is not needed
+composer.lock
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# Components from node.js and composer
+components/jquery
+components/select2
+components/require.config.js
+components/require.css
+components/require.js
+components/require-built.js
+
+# Codeception
+tests/codeception/_support/_generated/*
+
+#Error Logs
+error_log
+frontend/web/error_log
