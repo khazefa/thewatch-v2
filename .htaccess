@@ -4,6 +4,7 @@
 	# follow symbolic links
     Options +FollowSymlinks
 	IndexIgnore */*
+	AddDefaultCharset utf-8
 	# Set on RewriteEngine
     RewriteEngine On
 </IfModule>
@@ -28,6 +29,9 @@
 	# RewriteCond %{REQUEST_URI} !/maintenance.html$
 	# #RewriteCond %{REMOTE_ADDR} !^10.0.0.1$ # Change this to your ip address so that you can bypass the redirect
 	# RewriteRule .* /maintenance.html [R=307,L]
+	
+	RewriteCond %{REQUEST_URI} \.(htaccess|htpasswd|git)
+	RewriteRule \.(htaccess|htpasswd|git) - [F]
 </IfModule>
 
 # Deny accessing below extensions
