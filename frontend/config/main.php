@@ -6,15 +6,18 @@ $params = array_merge(
     require __DIR__ . '/params-local.php'
 );
 
+$home_url = $_SERVER['HTTP_HOST'] === 'localhost' ? '/thewatch-v2' : '/';
+$base_url = $_SERVER['HTTP_HOST'] === 'localhost' ? '/thewatch-v2' : '';
+
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-	'homeUrl' => '/thewatch-v2', // localhost home url
+	'homeUrl' => $home_url, // localhost home url
     'components' => [
         'request' => [
-			'baseUrl'=>'/thewatch-v2', // localhost base url
+			'baseUrl'=>$base_url, // localhost base url
             'csrfParam' => '_csrf-frontend',
         ],
         'user' => [
