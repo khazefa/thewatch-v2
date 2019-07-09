@@ -11,10 +11,10 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-	'homeUrl' => '/thewatch-v2',
+	'homeUrl' => '/thewatch-v2', // localhost home url
     'components' => [
         'request' => [
-			'baseUrl'=>'/thewatch-v2',
+			'baseUrl'=>'/thewatch-v2', // localhost base url
             'csrfParam' => '_csrf-frontend',
         ],
         'user' => [
