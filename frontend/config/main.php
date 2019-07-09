@@ -11,6 +11,7 @@ $base_url = $_SERVER['HTTP_HOST'] === 'localhost' ? '/thewatch-v2' : '';
 
 return [
     'id' => 'app-frontend',
+	'name'=>'The Watch',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
