@@ -142,7 +142,10 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        return $this->render('about');
+		$url_name = Yii::$app->session->name;
+        return $this->render('about', [
+			'url_name' => $url_name,
+		]);
     }
 
     /**
