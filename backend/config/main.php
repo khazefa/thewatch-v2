@@ -6,19 +6,14 @@ $params = array_merge(
     require __DIR__ . '/params-local.php'
 );
 
-$home_url = $_SERVER['HTTP_HOST'] === 'localhost' ? '/thewatch-v2/administrator' : '/';
-$base_url = $_SERVER['HTTP_HOST'] === 'localhost' ? '/thewatch-v2/administrator' : '/administrator';
-
 return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [],
-	'homeUrl' => $home_url, // localhost home url
     'components' => [
         'request' => [
-            'baseUrl' => $base_url, // localhost base url
             'csrfParam' => '_csrf-backend',
         ],
         'user' => [
@@ -42,15 +37,14 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-				'<controller:\w+>/<id:\d+>' => '<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-				'<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ],
         ],
+        */
     ],
     'params' => $params,
 ];

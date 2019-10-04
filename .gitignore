@@ -1,47 +1,43 @@
-# yii console command
+# yii console commands
 /yii
+/yii_test
+/yii_test.bat
 
 # phpstorm project files
-.idea/**
+.idea
 
 # netbeans project files
 nbproject
 
-# OS cache
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
 Thumbs.db
-.DS_Store
 
 # composer vendor dir
-vendor/*
-vendor/**
-
-# Uploads dirs
-web/media
-
-# Yii temp directories
-web/assets/**
-runtime/**
-web/minify/**
+/vendor
 
 # composer itself is not needed
-composer.lock
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
 
 # phpunit itself is not needed
 phpunit.phar
 # local phpunit config
 /phpunit.xml
 
-# Components from node.js and composer
-components/jquery
-components/select2
-components/require.config.js
-components/require.css
-components/require.js
-components/require-built.js
+# vagrant runtime
+/.vagrant
 
-# Codeception
-tests/codeception/_support/_generated/*
-
-#Error Logs
-error_log
-frontend/web/error_log
+# ignore generated files
+/frontend/web/index.php
+/frontend/web/index-test.php
+/frontend/web/robots.txt
+/backend/web/index.php
+/backend/web/index-test.php
+/backend/web/robots.txt

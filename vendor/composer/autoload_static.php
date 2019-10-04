@@ -4,11 +4,11 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit577193d7dd41a3717ced5caf6dd33177
+class ComposerStaticInit07909c32e5d00a6ec85dbf4c9ec87b5a
 {
     public static $files = array (
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
@@ -18,14 +18,13 @@ class ComposerStaticInit577193d7dd41a3717ced5caf6dd33177
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         '180092cfc969a12e06f2132a203a3184' => __DIR__ . '/..' . '/codeception/verify/src/Codeception/function.php',
-        '9a4d9b2dc09f1ad978b28fc9a8420755' => __DIR__ . '/..' . '/yiithings/yii2-dotenv/src/autoload.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'y' => 
         array (
-            'yiithings\\dotenv\\' => 17,
             'yii\\swiftmailer\\' => 16,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
@@ -70,6 +69,10 @@ class ComposerStaticInit577193d7dd41a3717ced5caf6dd33177
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
         ),
+        'O' => 
+        array (
+            'Opis\\Closure\\' => 13,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -84,7 +87,6 @@ class ComposerStaticInit577193d7dd41a3717ced5caf6dd33177
         ),
         'D' => 
         array (
-            'Dotenv\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
             'DeepCopy\\' => 9,
@@ -98,10 +100,6 @@ class ComposerStaticInit577193d7dd41a3717ced5caf6dd33177
     );
 
     public static $prefixDirsPsr4 = array (
-        'yiithings\\dotenv\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/yiithings/yii2-dotenv/src',
-        ),
         'yii\\swiftmailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer/src',
@@ -112,7 +110,7 @@ class ComposerStaticInit577193d7dd41a3717ced5caf6dd33177
         ),
         'yii\\faker\\' => 
         array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-faker/src',
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-faker',
         ),
         'yii\\debug\\' => 
         array (
@@ -216,6 +214,10 @@ class ComposerStaticInit577193d7dd41a3717ced5caf6dd33177
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
+        'Opis\\Closure\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/opis/closure/src',
+        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
@@ -227,10 +229,6 @@ class ComposerStaticInit577193d7dd41a3717ced5caf6dd33177
         'Egulias\\EmailValidator\\' => 
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
-        ),
-        'Dotenv\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (
@@ -833,10 +831,10 @@ class ComposerStaticInit577193d7dd41a3717ced5caf6dd33177
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit577193d7dd41a3717ced5caf6dd33177::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit577193d7dd41a3717ced5caf6dd33177::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit577193d7dd41a3717ced5caf6dd33177::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit577193d7dd41a3717ced5caf6dd33177::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit07909c32e5d00a6ec85dbf4c9ec87b5a::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit07909c32e5d00a6ec85dbf4c9ec87b5a::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit07909c32e5d00a6ec85dbf4c9ec87b5a::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit07909c32e5d00a6ec85dbf4c9ec87b5a::$classMap;
 
         }, null, ClassLoader::class);
     }
